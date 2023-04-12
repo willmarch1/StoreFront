@@ -8,19 +8,47 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\AdministrationController.cs" />
-    <Compile Remove="Models\AdministrationViewModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Controllers\AdministrationController.cs">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="Models\AdministrationViewModel.cs">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
+    <Content Remove="wwwroot\css\style.css.map" />
+    <Content Remove="wwwroot\fonts\ElegantIcons.svg" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\jquery-3.3.1.min.js" />
+    <Content Remove="wwwroot\js\jquery.countdown.min.js" />
+    <Content Remove="wwwroot\js\jquery.magnific-popup.min.js" />
+    <Content Remove="wwwroot\js\jquery.nice-select.min.js" />
+    <Content Remove="wwwroot\js\jquery.nicescroll.min.js" />
+    <Content Remove="wwwroot\js\jquery.slicknav.js" />
+    <Content Remove="wwwroot\js\main.js" />
+    <Content Remove="wwwroot\js\mixitup.min.js" />
+    <Content Remove="wwwroot\js\owl.carousel.min.js" />
+    <Content Remove="wwwroot\sass\style.scss" />
+    <Content Remove="wwwroot\sass\_about.scss" />
+    <Content Remove="wwwroot\sass\_base.scss" />
+    <Content Remove="wwwroot\sass\_blog-details.scss" />
+    <Content Remove="wwwroot\sass\_blog-sidebar.scss" />
+    <Content Remove="wwwroot\sass\_blog.scss" />
+    <Content Remove="wwwroot\sass\_breadcrumb.scss" />
+    <Content Remove="wwwroot\sass\_checkout.scss" />
+    <Content Remove="wwwroot\sass\_contact.scss" />
+    <Content Remove="wwwroot\sass\_footer.scss" />
+    <Content Remove="wwwroot\sass\_header.scss" />
+    <Content Remove="wwwroot\sass\_hero.scss" />
+    <Content Remove="wwwroot\sass\_home-page.scss" />
+    <Content Remove="wwwroot\sass\_mixins.scss" />
+    <Content Remove="wwwroot\sass\_product.scss" />
+    <Content Remove="wwwroot\sass\_responsive.scss" />
+    <Content Remove="wwwroot\sass\_shop-details.scss" />
+    <Content Remove="wwwroot\sass\_shop.scss" />
+    <Content Remove="wwwroot\sass\_shopping-cart.scss" />
+    <Content Remove="wwwroot\sass\_variable.scss" />
+    <Content Remove="wwwroot\Source\bootstrap-4.2.1-dist.zip" />
+    <Content Remove="wwwroot\Source\elegant_font.zip" />
+    <Content Remove="wwwroot\Source\font-awesome-4.7.0.zip" />
+    <Content Remove="wwwroot\Source\jquery-nice-select-1.1.0.zip" />
+    <Content Remove="wwwroot\Source\Magnific-Popup-master.zip" />
+    <Content Remove="wwwroot\Source\OwlCarousel2-2.3.4.zip" />
+    <Content Remove="wwwroot\Source\SlickNav-master.zip" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +61,98 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Administration\CreateRole.cshtml" />
+    <None Include="Views\Administration\EditRole.cshtml" />
+    <None Include="Views\Administration\EditUser.cshtml" />
+    <None Include="Views\Administration\EditUserRoles.cshtml" />
+    <None Include="Views\Administration\EditUsersInRole.cshtml" />
+    <None Include="Views\Administration\ListRoles.cshtml" />
+    <None Include="Views\Administration\ListUsers.cshtml" />
+    <None Include="wwwroot\css\style.css.map" />
+    <None Include="wwwroot\fonts\ElegantIcons.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\js\jquery.countdown.min.js" />
+    <None Include="wwwroot\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\js\jquery.nice-select.min.js" />
+    <None Include="wwwroot\js\jquery.nicescroll.min.js" />
+    <None Include="wwwroot\js\jquery.slicknav.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\mixitup.min.js" />
+    <None Include="wwwroot\js\owl.carousel.min.js" />
+    <None Include="wwwroot\sass\style.scss" />
+    <None Include="wwwroot\sass\_about.scss" />
+    <None Include="wwwroot\sass\_base.scss" />
+    <None Include="wwwroot\sass\_blog-details.scss" />
+    <None Include="wwwroot\sass\_blog-sidebar.scss" />
+    <None Include="wwwroot\sass\_blog.scss" />
+    <None Include="wwwroot\sass\_breadcrumb.scss" />
+    <None Include="wwwroot\sass\_checkout.scss" />
+    <None Include="wwwroot\sass\_contact.scss" />
+    <None Include="wwwroot\sass\_footer.scss" />
+    <None Include="wwwroot\sass\_header.scss" />
+    <None Include="wwwroot\sass\_hero.scss" />
+    <None Include="wwwroot\sass\_home-page.scss" />
+    <None Include="wwwroot\sass\_mixins.scss" />
+    <None Include="wwwroot\sass\_product.scss" />
+    <None Include="wwwroot\sass\_responsive.scss" />
+    <None Include="wwwroot\sass\_shop-details.scss" />
+    <None Include="wwwroot\sass\_shop.scss" />
+    <None Include="wwwroot\sass\_shopping-cart.scss" />
+    <None Include="wwwroot\sass\_variable.scss" />
+    <None Include="wwwroot\Source\bootstrap-4.2.1-dist.zip" />
+    <None Include="wwwroot\Source\elegant_font.zip" />
+    <None Include="wwwroot\Source\font-awesome-4.7.0.zip" />
+    <None Include="wwwroot\Source\jquery-nice-select-1.1.0.zip" />
+    <None Include="wwwroot\Source\Magnific-Popup-master.zip" />
+    <None Include="wwwroot\Source\OwlCarousel2-2.3.4.zip" />
+    <None Include="wwwroot\Source\SlickNav-master.zip" />
+    <None Include="wwwroot\_Archive\css\style.css.map" />
+    <None Include="wwwroot\_Archive\fonts\ElegantIcons.svg" />
+    <None Include="wwwroot\_Archive\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\_Archive\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\_Archive\js\bootstrap.min.js" />
+    <None Include="wwwroot\_Archive\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\_Archive\js\jquery.countdown.min.js" />
+    <None Include="wwwroot\_Archive\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\_Archive\js\jquery.nice-select.min.js" />
+    <None Include="wwwroot\_Archive\js\jquery.nicescroll.min.js" />
+    <None Include="wwwroot\_Archive\js\jquery.slicknav.js" />
+    <None Include="wwwroot\_Archive\js\main.js" />
+    <None Include="wwwroot\_Archive\js\mixitup.min.js" />
+    <None Include="wwwroot\_Archive\js\owl.carousel.min.js" />
+    <None Include="wwwroot\_Archive\sass\style.scss" />
+    <None Include="wwwroot\_Archive\sass\_about.scss" />
+    <None Include="wwwroot\_Archive\sass\_base.scss" />
+    <None Include="wwwroot\_Archive\sass\_blog-details.scss" />
+    <None Include="wwwroot\_Archive\sass\_blog-sidebar.scss" />
+    <None Include="wwwroot\_Archive\sass\_blog.scss" />
+    <None Include="wwwroot\_Archive\sass\_breadcrumb.scss" />
+    <None Include="wwwroot\_Archive\sass\_checkout.scss" />
+    <None Include="wwwroot\_Archive\sass\_contact.scss" />
+    <None Include="wwwroot\_Archive\sass\_footer.scss" />
+    <None Include="wwwroot\_Archive\sass\_header.scss" />
+    <None Include="wwwroot\_Archive\sass\_hero.scss" />
+    <None Include="wwwroot\_Archive\sass\_home-page.scss" />
+    <None Include="wwwroot\_Archive\sass\_mixins.scss" />
+    <None Include="wwwroot\_Archive\sass\_product.scss" />
+    <None Include="wwwroot\_Archive\sass\_responsive.scss" />
+    <None Include="wwwroot\_Archive\sass\_shop-details.scss" />
+    <None Include="wwwroot\_Archive\sass\_shop.scss" />
+    <None Include="wwwroot\_Archive\sass\_shopping-cart.scss" />
+    <None Include="wwwroot\_Archive\sass\_variable.scss" />
+    <None Include="wwwroot\_Archive\Source\bootstrap-4.2.1-dist.zip" />
+    <None Include="wwwroot\_Archive\Source\elegant_font.zip" />
+    <None Include="wwwroot\_Archive\Source\font-awesome-4.7.0.zip" />
+    <None Include="wwwroot\_Archive\Source\jquery-nice-select-1.1.0.zip" />
+    <None Include="wwwroot\_Archive\Source\Magnific-Popup-master.zip" />
+    <None Include="wwwroot\_Archive\Source\OwlCarousel2-2.3.4.zip" />
+    <None Include="wwwroot\_Archive\Source\SlickNav-master.zip" />
   </ItemGroup>
 
 </Project>
