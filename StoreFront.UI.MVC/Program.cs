@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using StoreFront.UI.MVC.Data;
 using System.Data;
 using StoreFront.DATA.EF;
+using StoreFront.DATA.EF.Models;
 
 namespace StoreFront.UI.MVC
 {
@@ -18,7 +19,7 @@ namespace StoreFront.UI.MVC
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                options.UseSqlServer(connectionString));
 
-           //builder.Services.AddDbContext<StoreFrontContext>(options => options.UseSqlServer(connectionString));
+           builder.Services.AddDbContext<StoreFrontContext>(options => options.UseSqlServer(connectionString));
 
 
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
