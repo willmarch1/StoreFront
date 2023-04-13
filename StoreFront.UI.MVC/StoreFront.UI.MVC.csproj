@@ -155,4 +155,8 @@
     <None Include="wwwroot\_Archive\Source\SlickNav-master.zip" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StoreFront.DATA.EF\StoreFront.DATA.EF.csproj" />
+  </ItemGroup>
+
 </Project>
